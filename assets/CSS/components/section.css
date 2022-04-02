@@ -9,7 +9,8 @@
 .section__about {
     max-width: 50rem;
 }
-.section__projects {
+.section__projects,
+.section__contact {
     max-width: 40rem;
     padding-top: 5rem;
 }
