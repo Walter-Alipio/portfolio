@@ -1,0 +1,104 @@
+.header {
+    background-color: var(--grey-medium);
+    display: flex;
+    justify-content: flex-end;
+
+    padding: 1rem;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 2px 10px #000;
+}
+
+.header__button {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+}
+.header__menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    right: 0;
+    background: linear-gradient(
+        68.15deg,
+        var(--grey-medium) 16.62%,
+        var(--grey-soft) 85.61%
+    );
+    height: 0px;
+    transition: 0.6s;
+    z-index: 1000;
+    visibility: hidden;
+    overflow-y: hidden;
+}
+
+.active {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    /* overflow-y: auto; */
+}
+
+.header__menu-item {
+    padding: 0.5rem 0;
+    margin: 0 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    color: var(--purple);
+}
+.header__menu-item:hover {
+    border-bottom-color: rgba(235, 98, 35);
+}
+/* criando um menu hamburguer apenas com css */
+.header__menu-hamburguer {
+    border-top: 2px solid;
+    width: 20px;
+    color: var(--purple);
+}
+.header__menu-hamburguer::after,
+.header__menu-hamburguer::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.5s;
+}
+/* a classe button-active é ativada via js */
+.button-active .header__menu-hamburguer {
+    border-top-color: transparent;
+}
+.button-active .header__menu-hamburguer::before {
+    transform: rotate(135deg);
+}
+.button-active .header__menu-hamburguer::after {
+    transform: rotate(-135deg);
+    top: -7px;
+}
+
+@media screen and (min-width: 768px) {
+    .header__button {
+        display: none;
+    }
+    .header__menu {
+        flex-direction: row;
+        justify-content: flex-end;
+        position: relative;
+        width: inherit;
+        top: inherit;
+        right: 0;
+        background: transparent;
+        height: inherit;
+        transition: 0.6s;
+        z-index: inherit;
+        visibility: visible;
+        overflow-y: hidden;
+    }
+}

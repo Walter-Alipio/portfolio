@@ -1,0 +1,32 @@
+@import url("components/title.css");
+@import url("components/section.css");
+:root {
+    --grey-hard: #8d8d8d;
+    --grey-strong: #b8b8b8;
+    --grey-medium: #e2e2e2;
+    --grey-soft: #f3f3f3;
+
+    --orange: #f9661d;
+
+    --purple: #480275;
+
+    --font: "Lato", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+body {
+    font-family: var(--font);
+    background-color: var(--grey-soft);
+}

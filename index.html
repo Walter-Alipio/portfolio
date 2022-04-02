@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Walter | protfólio </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/CSS/base.css">
+    <link rel="stylesheet" href="assets/CSS/header.css">
+    <link rel="stylesheet" href="assets/CSS/main.css">
+    <link rel="stylesheet" href="assets/CSS/projects.css">
+    <link rel="stylesheet" href="assets/CSS/footer.css">
+</head>
+
+<body>
+    <header class="header">
+        <button class="header__button" data-menu="button"><span class=" header__menu-hamburguer"></span></button>
+        <nav class="header__menu" data-menu="menu">
+            <a href="#about" class="header__menu-item" data-item="link">Sobre</a>
+            <a href="#projects" class="header__menu-item" data-item="link">Projetos</a>
+            <a href="#contact" class="header__menu-item" data-item="link">Contato</a>
+        </nav>
+    </header>
+    <main class="main" id="home">
+        <div class="title__name">
+            <h1 class="title ">Walter Alípio</h1>
+        </div>
+        <section class="section section__about">
+            <h2 id="about" class="title">Sobre mim</h2>
+            <p>Olá, meu nome é Walter Alípio, prazer.</p>
+            <p>
+                Apaixonado pela área de desenvolvimento, com foco em Front-End. Estudante de Análise e desenvolvimento
+                de sistemas e
+                aluno da Alura cursos de tecnologia.
+            </p>
+
+            <p>
+                Por 10 anos fui sócio e instrutor na TSKF Academia de Kung Fu, onde atingi o grau de faixa preta 2º
+                tuan. Decidi mudar
+                de ares e voltar para a área de TI, trazendo na bagagem toda a disciplina e comprometimento de um
+                artista marcial.
+            </p>
+            <p>
+                Aqui você vai encontrar alguns dos meus projetos.
+            </p>
+
+        </section>
+
+        <section class="section section__projects">
+            <h2 id="projects" class="title">Projetos</h2>
+            <ul class="projects">
+                <li class="projects__item">
+                    <article class="projects__card">
+                        <h3 class="title__projects">Alura Lucky</h3>
+                        <a href="https://codepen.io/walter-alipio/full/VwrJxaq">
+                            <img src="assets/img/AluraLucy-instrucoes.png" alt="Tela de instruções do jogo"
+                                class="projects__card-img">
+
+                        </a>
+                        <h3>Descrição</h3>
+                        <p>Baseado no Mentalista, projeto da aula 3 da Imersão Dev da alura, o Alura Lucky é um jogo de
+                            adivinhação. Utilizando
+                            apenas recursos nativos de HTML, CSS e JS sem nenhuma biblioteca ou dependência. No seu
+                            desenvolvimento, foi possível
+                            trabalhar com alguns efeitos do CSS como transition, webkit-box-reflect e animation.</p>
+                    </article>
+                </li>
+                <li>
+                    <article class="projects__card">
+                        <h3 class="title__projects">Conversor de moeda</h3>
+                        <a href="https://codepen.io/walter-alipio/full/gOXJdvr">
+                            <img src="assets/img/Conversor-monetario.png" alt="Captura de tela do conversor de moeda"
+                                class="projects__card-img">
+                        </a>
+                        <h3>Descrição</h3>
+                        <p>Converte o valor em digitado de reais R$ para dólar, euro, libra e bitcoin, apresentando os
+                            resultados em coluna.</p>
+                        <p> Para esse projeto foi feito o consumo de uma API externa que traz o valor de cotação das
+                            moedas
+                            selecionadas. Trabalha com
+                            promise, fetch, async e await.</p>
+                    </article>
+                </li>
+                <li>
+                    <article class="projects__card">
+                        <h3 class="title__projects">Calculadora e conversor</h3>
+                        <a href="https://codepen.io/walter-alipio/full/KKyYNqj">
+                            <img src="assets/img/Calcula-media.png" alt="Aba calculadora de medias"
+                                class="projects__card-img">
+                        </a>
+                        <h3>Descrição</h3>
+                        <p>Baseado na proposta da primeira aula da imersão dev Alura. </p>
+                        <p>
+                            Calcula a média entre 4 notas,
+                            converte temperatura de graus
+                            celsius para fahrenheit e de fahrenheit para celsius.
+                        </p>
+                        <p>
+                            O layout possui um template único que
+                            é alterado ao clicar nas
+                            abas da parte superior, funcionando semelhante a uma single page application.
+                        </p>
+                    </article>
+                </li>
+                <li>
+                    <article class="projects__card">
+                        <h3 class="title__projects">TOP 2 no Desafio Tech</h3>
+                        <a href="https://desafio-ballerini-iota.vercel.app/">
+                            <img src="assets/img/DesafioTech-home.png" alt="Home da pagina DesafioTech"
+                                class="projects__card-img">
+                        </a>
+                        <h3>Descrição</h3>
+                        <p>Foram 3 desafios e um extra, propostos na comunidade do discord da Ballerini. </p>
+                        <p>
+                            O primeiro era entrar com dados do usuário e devolvê-los em uma única frase, ou lista. O
+                            segundo era
+                            entrar com um valor de troco e devolver quantas moedas seriam usadas. O terceiro era entrar
+                            com um parágrafo e devolver
+                            quantas letras, palavras e frases existem no texto. Por último, desafio extra, desenvolver
+                            uma interface em html e css.
+                        </p>
+                        <p>
+                            Foi possível praticar um varios conceitos de html e css, e principalmente, consegui usar
+                            conceitos que
+                            aprendi sobre o paradigma de
+                            orientação a objetos e MVC do curso do professor Flávio Henrique na Alura. O projeto ficou
+                            em 2º lugar na lista entre os
+                            10 melhores projetos.
+                        </p>
+                    </article>
+                </li>
+                <li>
+                    <article class="projects__card">
+                        <h3 class="title__projects">Alura Dev</h3>
+                        <a href="https://alura-dev-challenge.vercel.app/index.html">
+                            <img src="assets/img/AluraDev-home.png"
+                                alt="3 imagens da tela home do AluraDev representando a versão desktop, tablet e mobile."
+                                class="projects__card-img">
+                        </a>
+                        <h3>Descrição</h3>
+                        <p>Na página home você pode escrever um código que seja html, css, ou js e visualizá-lo em
+                            highlight. Para isso foi usada
+                            uma biblioteca externa, highlight.js. A borda da área de código pode ser estilizada com a
+                            cor que você quiser. Nome do
+                            projeto e linguagem são campos obrigatórios para poder salvar.
+                            As informações são salvas em um arquivo JSON no localStorage, que serve de banco de dados, e
+                            importadas na página da
+                            comunidade.</p>
+                        <p>
+                            O like também foi implementado e salva o contador no localStorage.
+                            Na página da comunidade é possível procurar por um projeto específico digitando o nome do
+                            projeto ou alguma letra ou
+                            palavra na barra de busca, implementado usando expressão regular no js.
+                        </p>
+                        <p>
+                            O projeto mais desafiador até agora, meu primeiro challenge e o segundo challenge front-end
+                            da Alura. Feito com base em
+                            layout disponibilizado no figma, seguindo cartões de tarefas pelo trello e com a ajuda da
+                            comunidade do discord.
+                        </p>
+                    </article>
+                </li>
+                <li>
+                    <article class="projects__card">
+                        <h3 class="title__projects">AluraGeek</h3>
+                        <a href="https://alura-challenge-frontend-3.vercel.app/">
+                            <img src="assets/img/AluraGeek-home.png"
+                                alt="3 imagens da tela home do AluraGeek, versao desktop, tablet e mobile."
+                                class="projects__card-img">
+                        </a>
+                        <h3>Descrição</h3>
+                        <p>AluraGeek simula a página de administrador de um e-commerce. Projeto do terceiro challenge
+                            front-end da Alura, ainda em
+                            construção, já conta com layout responsivo de todas as páginas e validação dos inputs do
+                            formulário no rodapé. Será
+                            implementado conexão a API para editar os produtos das páginas.</p>
+                    </article>
+                </li>
+            </ul>
+        </section>
+        <section class="section">
+            <h2 id="contact" class="title">Contato</h2>
+            <ul class="contact__list">
+
+                <li><a href="https://github.com/Walter-Alipio">
+
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
+                            alt="GitHub" class="contact__link-img">
+                    </a>
+                </li>
+
+                <li><a href="https://www.linkedin.com/in/walter-al%C3%ADpio-silva-738a1821b/"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original-wordmark.svg"
+                            alt="Linkedin" class="contact__link-img linkedin"></a>
+                </li>
+
+                <li><a href="mailto: walteralipio@outlook.com" class="contact__list-item-link">
+                        <img src="assets/img/icons/envelope-solid.svg" alt="Email" class="contact__link-img"></a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="footer">
+        <a href="#home" class="top">Top</a>
+        <p> Desenvolvido por Walter Alípio </p>
+        <p>2022</p>
+    </footer>
+
+    <script src="assets/JS/menuMobile.js"></script>
+    <script src="assets/JS/buttonTop.js"></script>
+</body>
+
+</html>

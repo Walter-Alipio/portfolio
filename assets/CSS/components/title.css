@@ -1,0 +1,17 @@
+.title {
+    color: var(--orange);
+    padding-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.title__name {
+    margin-top: 6rem;
+    margin-left: 3vw;
+    margin-bottom: 3rem;
+}
+
+.title__projects {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--purple);
+}

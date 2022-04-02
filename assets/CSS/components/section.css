@@ -1,0 +1,15 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 5rem auto;
+    justify-content: center;
+}
+
+.section__about {
+    max-width: 50rem;
+}
+.section__projects {
+    max-width: 40rem;
+    padding-top: 5rem;
+}
